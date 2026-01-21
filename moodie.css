@@ -1,0 +1,112 @@
+body {
+    background-color: #04031b;
+    color: rgb(251, 248, 248);
+    margin: 0;
+    overflow: hidden;
+    font-family: 'Satisfy', cursive;
+}
+
+h1 {
+    color: #fefefe;
+    padding: 50px;
+    font-size: 45px;
+    text-align: center;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 80vh; /* Takes up most of the vertical space */
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.form-container {
+    max-width: 400px;
+    width: 100%;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input[type=text], input[type=password] {
+    width: 100%;
+    padding: 10px;
+    margin: 5px 0;
+    background: #f1f1f1;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+button {
+    background-color: #04AA6D;
+    color: white;
+    padding: 10px 15px;
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 4px;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+.cancelbtn {
+    background-color: #f44336;
+    width: 48%;
+    display: inline-block;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+footer {
+    text-align: center;
+    color: azure;
+    padding: 10px;
+    font-size: 12px;
+}
+
+.image-container {
+    max-width: 200px;
+    width: 100%;
+}
+
+.image-container img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background-color: white;
+    animation: twinkling 1s infinite;
+    opacity: 0;
+}
+
+@keyframes twinkling {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-10px);
+    }
+}
