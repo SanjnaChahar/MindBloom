@@ -28,14 +28,67 @@ h1 {
     margin-top: 20px;
 }
 
-.form-container {
-    max-width: 400px;
-    width: 100%;
-    background-color: #fff;
+.soft-form {
+    width: 320px;
     padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 16px;
+
+    background: rgba(255, 255, 255, 0.08); /* transparency */
+    backdrop-filter: blur(10px);          /* glass effect */
+    -webkit-backdrop-filter: blur(10px);
+
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+
+    color: #fff;
 }
+
+.soft-form h2 {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.soft-form .subtitle {
+    text-align: center;
+    font-size: 13px;
+    opacity: 0.8;
+    margin-bottom: 15px;
+}
+
+.soft-form input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 12px;
+
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    border-radius: 8px;
+
+    color: white;
+    outline: none;
+}
+
+.soft-form input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.soft-form button {
+    width: 100%;
+    padding: 10px;
+
+    background: linear-gradient(135deg, #7f7fd5, #86a8e7);
+    border: none;
+    border-radius: 10px;
+
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.soft-form button:hover {
+    opacity: 0.9;
+}
+
 
 input[type=text], input[type=password] {
     width: 100%;
