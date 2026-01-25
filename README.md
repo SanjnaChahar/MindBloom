@@ -2,7 +2,7 @@
 
 MindBloom is a fun and gentle mental health web app focused on mood awareness and self-reflection.
 
-## Why this project?
+#Why this project?
 I have personally explored various mental health applications and observed how their fun and interactive
 designs make mental well-being more approachable, especially for teenagers and young adults.
 
