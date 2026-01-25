@@ -3,49 +3,133 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Moodie - Mental Health Project</title>
+    <title>Moodie - Feel, Breathe, Be at Ease</title>
+    
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Satisfy&display=swap" rel="stylesheet">
+    
     <link rel="stylesheet" href="moodie.css">
 </head>
 <body>
+
     <div class="main">
         <h1>Moodie - Feel, Breathe, Be at Ease</h1>
 
         <div class="content">
-            <!-- Login Box (Left Side) -->
-                <form class="soft-form">
-                    <h2>Sign Up</h2>
-                    <p class="subtitle">Create your safe space </p>
-                    
-                    <input type="email" placeholder="Email" required>
-                    <input type="password" placeholder="Password" required>
-                    <input type="password" placeholder="confirm Password" required>
-                    
-                    <button type="submit">Get Started</button>
-                </form>
 
-            <!-- Image (Right Side) -->
-            <div class="image-container">
+            <!-- Sign Up Form Section -->
+            <div class="signup-container">
+                <div class="form-wrapper">
+                    <h2>Create your safe space</h2>
+                    <p class="form-subtext">A gentle place to track moods and find calm — your data stays private.</p>
+
+                    <button class="social-btn google-btn">
+                        <img src="https://www.google.com/favicon.ico" alt="Google icon" width="18">
+                        Continue with Google
+                    </button>
+
+                    <div class="divider">
+                        <span>or</span>
+                    </div>
+
+                    <form id="signupForm" class="signup-form" novalidate>
+                        <div class="input-group">
+                            <input 
+                                type="email" 
+                                id="email" 
+                                name="email" 
+                                placeholder=" " 
+                                required 
+                                autocomplete="email"
+                                aria-describedby="email-help"
+                            >
+                            <label for="email">Email</label>
+                            <small id="email-help" class="help-text">We'll never share your email</small>
+                        </div>
+
+                        <div class="input-group password-group">
+                            <input 
+                                type="password" 
+                                id="password" 
+                                name="password" 
+                                placeholder=" " 
+                                required 
+                                minlength="8"
+                                autocomplete="new-password"
+                            >
+                            <label for="password">Password</label>
+                            <button 
+                                type="button" 
+                                class="toggle-password" 
+                                aria-label="Toggle password visibility"
+                            >
+                                👁️
+                            </button>
+                            <div id="password-strength" class="strength-bar"></div>
+                            <small class="help-text">Minimum 8 characters • We encrypt everything</small>
+                        </div>
+
+                        <div class="input-group">
+                            <input 
+                                type="password" 
+                                id="confirmPassword" 
+                                name="confirmPassword" 
+                                placeholder=" " 
+                                required 
+                                autocomplete="new-password"
+                            >
+                            <label for="confirmPassword">Confirm Password</label>
+                        </div>
+
+                        <button type="submit" class="submit-btn">Get Started →</button>
+                    </form>
+
+                    <p class="guest-link">
+                        Just exploring? 
+                        <a href="#demo" class="guest-link-a">Start anonymously</a>
+                    </p>
+
+                    <div class="crisis-box">
+                        <p>Feeling overwhelmed right now?</p>
+                        <a 
+                            href="https://www.vandrevalafoundation.com/" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            class="crisis-link"
+                        >
+                            Talk to someone → Helplines in India
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Image Section -->
+           <div class="image-container">
                 <img src="c:\Users\Mohit\Downloads\download (5).jpeg" alt="Mental Health Image" />
             </div>
+
         </div>
 
-        <!-- Meditation Sound Button -->
+        <!-- Meditation Sound Section -->
         <div class="meditation-section">
             <button onclick="playMeditationSound()">Play Meditation Sound</button>
-            <audio id="meditationAudio" src="path/to/your-sound.mp3" type="audio/mp3"></audio>
+            <audio id="meditationAudio" loop>
+                <source src="https://cdn.pixabay.com/audio/2023/08/07/audio_3b8d7d7e3d.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
         </div>
 
-        <!-- Twinkling Stars -->
+        <!-- Twinkling Stars (positioned via CSS in moodie.css) -->
         <div class="star" style="top: 20%; left: 30%;"></div>
         <div class="star" style="top: 50%; left: 70%;"></div>
 
-        <!-- Footer -->
-        <footer><h2>Made with &hearts; for mental wellness</h2></footer>
+        <footer>
+            <h2>Made with ❤️ for mental wellness</h2>
+        </footer>
     </div>
 
     <script src="moodie.js"></script>
+
 </body>
 </html>
