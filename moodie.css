@@ -46,11 +46,11 @@ h1 {
    Sign-up Form
 ============================================================================ */
 .signup-container {
-    max-width: 420px;
+    max-width: 400px;
     margin: 40px auto;
     padding: 0 20px;
     text-align: center;
-    flex: 1;
+    flex: 5;
     min-width: 340px;
 }
 
@@ -73,8 +73,8 @@ h1 {
 .form-wrapper {
     background: rgba(20, 20, 40, 0.7);
     backdrop-filter: blur(10px);
-    border-radius: 24px;
-    padding: 40px 28px;
+    border-radius: 14px;
+    padding: 20px 28px;
     border: 1px solid rgba(100, 100, 255, 0.12);
     box-shadow: 0 10px 40px rgba(0,0,0,0.5);
 }
@@ -88,13 +88,13 @@ h1 {
 .form-subtext {
     font-size: 1rem;
     color: #b0b0e0;
-    margin-bottom: 28px;
+    margin-bottom: 8px;
 }
 
 /* Floating labels & inputs */
 .input-group {
     position: relative;
-    margin-bottom: 24px;
+    margin-bottom: 14px;
     text-align: left;
 }
 
@@ -102,7 +102,7 @@ h1 {
     width: 100%;
     padding: 16px 14px 8px;
     border: 1px solid #444466;
-    border-radius: 12px;
+    border-radius: 6px;
     background: rgba(30, 30, 60, 0.6);
     color: white;
     font-size: 1.05rem;
@@ -192,7 +192,7 @@ h1 {
     padding: 16px;
     background: linear-gradient(135deg, #7b5eff, #a78bfa);
     border: none;
-    border-radius: 12px;
+    border-radius: 6px;
     color: white;
     font-size: 1.15rem;
     font-weight: 600;
@@ -208,17 +208,17 @@ h1 {
 .divider {
     display: flex;
     align-items: center;
-    margin: 20px 0;
+    margin: 1px 0;
     color: #707090;
 }
 
 .divider span {
-    padding: 0 16px;
+    padding: 0 130px;
     background: rgba(20, 20, 40, 0.7);
 }
 
 .guest-link {
-    margin-top: 20px;
+    margin-top: 10px;
     font-size: 0.95rem;
     color: #a0a0cc;
 }
@@ -230,11 +230,11 @@ h1 {
 
 /* Crisis box */
 .crisis-box {
-    margin-top: 32px;
+    margin-top: 22px;
     padding: 16px;
     background: rgba(255, 100, 100, 0.08);
     border: 1px solid rgba(255, 100, 100, 0.2);
-    border-radius: 12px;
+    border-radius: 6px;
     font-size: 0.95rem;
 }
 
